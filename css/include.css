@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+
+
+
+
+
+
+
+/*header*/
+#header{
+    position:relative; 
+    text-align:center; 
+    margin:10px 50px;
+    line-height:43px;
+}
+#header a{
+    color:#333;
+}
+
+#header h1{
+    background:url(../images/sp_com.png) no-repeat -300px -5px;
+    width:110px; 
+    height:43px; 
+    position:absolute;
+}
+#header h1 a{
+    display:block; 
+    text-indent:-9999px;
+}
+
+
+
+.gnb {
+    display:inline-block;
+}
+.gnb li{
+    float:left; 
+    padding:0 30px;
+}
+.gnb li a::after{
+    content:""; 
+    display:block; 
+    width:100%; 
+    height:1px; 
+    background:#333; 
+    margin:0 auto;  
+    position:absolute; 
+    bottom:5px; 
+    left:50%; 
+    margin-left:-50%;
+    transform:scale(0); 
+    transition:all 0.5s;
+}
+.gnb li:hover a::after{transform:scale(1)}
+
+.gnb li a{
+    font-weight:bold; 
+    display:block; 
+    position:relative;
+}
+.gnb_sub {
+    position:absolute; 
+    right:0; top:0;
+}
+.gnb_sub li{float:left;}
+
+.gnb_sub li::after{
+    content:""; 
+    display:inline-block; 
+    width:1px; 
+    height:8px; 
+    background:#ccc; 
+    margin:0 5px;
+}
+.gnb_sub li:last-child::after{display:none;}
+
+.gnb_sub li a{
+    font-weight:bold; 
+    font-size:13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+#footer{
+    background:#4c5459; 
+    font-size:13px;
+}
+.f_top{
+    background:#383f43; 
+    height:40px; 
+    line-height:40px;
+    padding:10px 0;
+}
+.f_menu{float:left;}
+
+.f_menu li{float:left;}
+
+.f_menu li::after{
+    content:""; 
+    display:inline-block; 
+    width:1px; 
+    height:10px; 
+    background:#666; 
+    margin:0 5px;
+}
+.m_f_menu li:last-child::after{display:none;}
+
+.f_menu li a{color:#fff;}
+
+.f_cs{float:right;}
+
+.f_cs li{
+    float:left; 
+    color:#fff; 
+    background:#2a3033; 
+    padding:0 15px; 
+    height:40px; 
+    line-height:40px; 
+    margin-left:10px;
+}
+.f_cs li span{vertical-align:middle;}
+
+.cs_tel{font-size:22px; margin-left:10px;}
+
+.f_cs .family{
+    color:#333; 
+    background:url(../images/arrow.png) no-repeat #fff 90% center;
+    width:150px;
+}
+.f_bot{
+    text-align:center;
+    height:150px;
+    padding:50px 0;
+    color:#fff;
+}
+.f_logo{
+    background:url(../images/sp_com.png) no-repeat -150px 0;
+    width:130px;
+    height:50px;
+    text-indent:-9999px;
+    margin:0 auto;
+    margin-bottom:30px;
+}
+.f_info{font-size:0;}
+
+.f_info span::after{
+    content:"";
+    display:inline-block;
+    width:1px;
+    height:10px;
+    background-color:#999;
+    margin:0 20px;
+}
+.f_info span:last-child::after{display:none;}
+
+.f_info span{font-size:13px;}
+
+.copy{margin-top:10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
